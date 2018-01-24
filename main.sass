@@ -1,0 +1,122 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	min-width: 320px
+	font-family: $default-font
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.accordeon
+	.active 
+		color: red
+
+.wrapper
+	.tabs
+		.tab
+			padding: 6px
+			background-color: silver
+			border-left: 1px #000 solid
+			border-right: 1px #000 solid
+			border-top: 1px #000 solid
+			border-bottom: 1px #000 solid
+			b
+				font-family: fontawesome
+	.tab_content
+		.tab_item
+			background-color: silver
+			color: #fff
+			margin-top: 6px
+	.active
+		color: red
+		border-bottom: 1px transparent solid
+
+
+.qwerty
+	width: 600px
+	margin: auto
+
+.item
+	background-color: green
+	height: 100px
+	color: #fff
+
+
+.owl-nav
+	font-family: fontawesome
+	font-size: 60px
+
+
+.owl-theme
+	.owl-nav [class*="owl-"]
+		font-size: 60px
+		line-height: 1
+		background-color: transparent
+		color: rgba(green,.5)
+		&:hover
+			background-color: transparent
+			color: green
+	.owl-nav
+		position: relative
+		.owl-prev
+			position: absolute
+			left: -50px
+			top: -100px
+		.owl-next
+			position: absolute
+			right: -50px
+			top: -100px
+
+
+
+	.owl-dots 
+		.owl-dot
+			span
+				background-color: rgba(green,.5)
+				width: 14px
+				height: 14px
+				border-radius: 0
+				transition: all .3s ease
+				transform: rotate(45deg)
+
+			&:hover
+				span
+					background-color: green
+		.owl-dot.active
+			span
+				background-color: green
+
+.owl-nav [class*="owl-"]
+
+
+@import "media"
